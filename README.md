@@ -52,7 +52,7 @@ STEP 10:Plot the error for each iteration <BR>
 STEP 11:Print the accuracy<BR>
 # PROGRAM:
 
-```
+```py
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -61,7 +61,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 ```
 
-```
+```py
 # Write a class for perceptron with fit and predict function with sigmoid activation function
 
 class Perceptron:
@@ -89,7 +89,7 @@ class Perceptron:
   def predict(self, x: np.array):
     return np.where(self.f(x) >= 0, 1, -1)
 ```
-```
+```py
 # Start your main here ,read the iris data set
 
 url = 'https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data'
@@ -116,7 +116,7 @@ ax.scatter(x[100:150, 0], x[100:150, 1], x[100:150, 2], color='green',
 plt.legend(loc='upper left')
 plt.show()
 ```
-```
+```py
 x = x[0:100, 0:2] 
 y = y[0:100]
 
@@ -130,7 +130,7 @@ plt.show()
 
 ```
 
-```
+```py
 # split the data
 y = np.where(y == 'Iris-setosa', 1, -1)
 x[:, 0] = (x[:, 0] - x[:, 0].mean()) / x[:, 0].std()
@@ -146,7 +146,7 @@ print("accuracy", accuracy_score(classifier.predict(x_test), y_test)*100)
 
 ```
 
-```
+```py
 # plot the number of errors during each iteration
 
 plt.plot(range(1, len(classifier.misclassified_samples) + 1),classifier.misclassified_samples, marker='o')
