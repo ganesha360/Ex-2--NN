@@ -1,7 +1,7 @@
 # Experiment No. 2
 
-<H3>Name : Thiyagarajan A</H3>
-<H3>Register no. 212222240110</H3>
+<H3>Name : GANESH R A</H3>
+<H3>Register no. 212222240029</H3>
 <H3>Date</H3>
 
 ## Implementation of Perceptron for Binary Classification
